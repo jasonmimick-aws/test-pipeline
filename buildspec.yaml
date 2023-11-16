@@ -26,6 +26,8 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
+      - echo "Fake long running build, manually stop this"
+      - sleep 1h
       #- mvn install
     finally:
       - echo This always runs even if the install command fails
